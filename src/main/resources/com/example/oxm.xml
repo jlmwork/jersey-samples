@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xml-bindings
+    xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/oxm
+            http://www.eclipse.org/eclipselink/xsds/eclipselink_oxm_2_4.xsd"
+    package-name="com.example"
+    xml-name-transformer="com.example.NameGenerator">
+    <java-types>
+        <java-type name="SimpleBean">
+            <xml-root-element/>
+            <xml-type prop-order="str nb anotherAttribute"/>
+            <java-attributes>
+                <xml-element java-attribute="str" nillable="true" />
+                <!--                <xml-element java-attribute="lastName" name="last-name"/>
+                <xml-element java-attribute="phoneNumbers" name="phone-number"/>-->
+            </java-attributes>
+        </java-type>
+    </java-types>
+</xml-bindings>
